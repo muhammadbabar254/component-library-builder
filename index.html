@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Component Library Builder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>🧩 UI Library</h2>
+
+        <p>Copy ready components instantly</p>
+
+        <div class="menu">
+
+            <button class="tab active" data-target="buttons">Buttons</button>
+            <button class="tab" data-target="cards">Cards</button>
+            <button class="tab" data-target="forms">Forms</button>
+            <button class="tab" data-target="navbar">Navbar</button>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <div class="header">
+            <h1>Component Library Builder</h1>
+            <p>Select a component and copy ready code</p>
+        </div>
+
+        <div class="content">
+
+            <!-- BUTTONS -->
+            <div class="box active" id="buttons">
+
+                <div class="preview">
+                    <button class="btn primary">Primary</button>
+                    <button class="btn dark">Dark</button>
+                    <button class="btn outline">Outline</button>
+                </div>
+
+                <textarea readonly>
+<button class="btn primary">Primary</button>
+                </textarea>
+
+            </div>
+
+            <!-- CARDS -->
+            <div class="box" id="cards">
+
+                <div class="card-preview">
+                    <div class="card-ui">
+                        <h3>Card Title</h3>
+                        <p>Simple card component example.</p>
+                    </div>
+                </div>
+
+                <textarea readonly>
+<div class="card">
+  <h3>Card Title</h3>
+  <p>Simple card component</p>
+</div>
+                </textarea>
+
+            </div>
+
+            <!-- FORMS -->
+            <div class="box" id="forms">
+
+                <input type="text" placeholder="Input field">
+                <button class="btn primary">Submit</button>
+
+                <textarea readonly>
+<input type="text" placeholder="Input">
+                </textarea>
+
+            </div>
+
+            <!-- NAVBAR -->
+            <div class="box" id="navbar">
+
+                <nav class="nav-preview">
+                    <span>Logo</span>
+                    <div>Home | About | Contact</div>
+                </nav>
+
+                <textarea readonly>
+<nav>
+  <div>Logo</div>
+</nav>
+                </textarea>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
